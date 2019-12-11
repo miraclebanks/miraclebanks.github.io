@@ -1,0 +1,316 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+                <style>
+                #header{
+                    background: rgb(233, 225, 178);
+                    color: white;
+                    overflow: auto;
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+                #header a{
+                    text-decoration: none;
+                    font-family: helvetica;
+        
+                }
+                #header a:hover{
+                    color: pink;
+                    width: 100%;
+                }
+                .logo {
+                    width: 100px;
+                    top: 135px;
+                    padding: 0;
+                    margin-left: 45%;
+                }             
+                .leftMenu{
+                        float: left;
+                        display: inline-block;
+                    }
+                .leftMenu ul{
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+                .leftMenu ul li{
+                        display: inline-block;
+                        padding: 10px;
+
+                    }
+                .leftMenu ul li a{
+                       color:white;
+                    }
+                .leftMenu ul li a.dropdown{
+                       color:pink;
+                    }
+                .rightMenu{
+                        float: right;
+                        display: inline-block;
+                        background:rgb(233, 225, 178);
+                    }
+                 .rightMenu ul{
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                    }
+                 .rightMenu ul li{
+                        display: inline-block;
+                        padding: 10px;
+                    }
+                .rightMenu ul li a{
+                        color:white;
+                        
+                    }
+                .leftMenu ul li a:hover, .rightMenu ul li a:hover{
+                    color: pink;
+                    }
+                body{
+                    width: 100%;
+                    height: 100%;
+                    margin: 0px;
+                    padding: 0px;
+                    overflow-x: hidden;
+                }
+                    
+                .description-box h1{
+                    color: white;
+                    font-family: 'Lucida Sans';
+                    font-weight: 1000;
+                    font-size: 60px;
+                    margin: 0;
+                    }
+                    .description-box h3{
+                    color: white;
+                    font-size: 30px;
+                    font-weight: 300;
+                    margin:0;
+                    }
+                    .description-box h4{
+                    color: white;
+                    font-family: serif;
+                    font-weight: 400;
+                    margin:0;
+                    }
+                    .description-box p{
+                    color: white;
+                    font-family: 'Lucida Sans';
+                    font-weight: 100;
+                    font-size: 18px;
+                    margin-top: 25px 0 0 0;
+                    }
+
+
+                    #largeImage { 
+                        padding: 200px 25px;
+                        background: -webkit-linear-gradient(45deg, rgba(244,126,171,.5) 0%,
+                        #f7f5cd 100%), 
+                        url(https://images.unsplash.com/photo-1512149177596-f817c7ef5d4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1545&q=80) 
+                        no-repeat center center fixed;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                    height: 100%;
+                    
+                    }
+                    body{
+                        height: 100%;
+                    }
+                .button1{
+                    display:inline-block;
+                    padding: 12px 20px;
+                    background:rgba(224, 136, 159, 0.933);
+                    color: #ffff;
+                    cursor: pointer;
+                    margin: 0, 50px, 0;
+                }
+                .button1:hover{
+                    background: rgb(241, 169, 187);
+                }
+                .button2{
+                    display:inline-block;
+                    padding: 12px 20px;
+                    background:rgba(224, 136, 159, 0.933);
+                    color: #ffff;
+                    cursor: pointer;
+                    margin: 0, 50px, 0;
+                }
+                .button2:hover{
+                    background: rgb(241, 169, 187);
+             
+                }
+                #videoSection{
+                    width:100%;
+                    background: rgb(241, 169, 187);
+                    height: 100%;
+                    background-size: auto;
+                }
+                .row{
+                width: 100%;
+                font-size:0;
+                }
+                .videoBoxes{
+                    display: inline-block;
+                    background: rgb(233, 225, 178);
+                    width:15%;
+                    height:150px;
+                    font-size: 16px;
+                    margin: 1.2%;
+                    padding: 10px;
+
+                }
+                .videoBoxes p{
+                    display: none;
+                }
+                .videoBoxes h4{
+                    margin: 0;
+                    color: white;
+
+                }
+                .video1{
+                    background: -webkit-linear-gradient(45deg, rgba(244,126,171,.5) 0%,
+                        #f7f5cd 100%), 
+                        url(https://images.unsplash.com/photo-1568850716322-66b63ccd5d10?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1294&q=80) 
+                        no-repeat center center fixed;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+
+                }
+
+                .video2{background: -webkit-linear-gradient(45deg, rgba(244,126,171,.5) 0%,
+                        #f7f5cd 100%), url(https://images.unsplash.com/photo-1572793305968-2fa3f1844ca4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+                        no-repeat center center fixed;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                }
+
+                .video3{background: -webkit-linear-gradient(45deg, rgba(244,126,171,.5) 0%,
+                        #f7f5cd 100%), url(https://images.unsplash.com/photo-1497514440240-3b870f7341f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1481&q=80)
+                        no-repeat center center fixed;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                } 
+                .video4{background: -webkit-linear-gradient(45deg, rgba(244,126,171,.5) 0%,
+                        #f7f5cd 100%), url(https://images.unsplash.com/photo-1549942514-bf87b7b8cd99?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=60)
+                        no-repeat center center fixed;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                }
+                .video5{background: -webkit-linear-gradient(45deg, rgba(244,126,171,.5) 0%,
+                        #f7f5cd 100%), url(https://images.unsplash.com/photo-1533488765986-dfa2a9939acd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80)
+                        no-repeat center center fixed;
+                    -webkit-background-size: cover;
+                    -moz-background-size: cover;
+                    -o-background-size: cover;
+                    background-size: cover;
+                }
+                /* Format for Mobile Devices*/
+                @media screen and (max-width: 600px){
+                    .videoBoxes{
+                        width: 95%;
+                        margin: 2.5%;
+                    }
+                    .videoBoxes h4{
+                      font-family: helvetica;
+                      font-weight: 100;
+                      font-size: 30px;
+                      margin: 0;
+                      padding: 0;
+                    }
+                    .videoBoxes p{
+                        display: block;
+                      font-family: helvetica;
+                      font-weight: 300;
+                      font-size: 20px;
+                      color: white;
+                    }
+            }
+ </style>
+        </head>
+        <body>
+            <body style = "margin:0">
+        <div id ="header">
+            <div class= "logo">
+            </div> 
+            <div class= "leftMenu">
+               <ul>
+                   <li>
+                        <a href="New.html"class = "dropdown">New</a>
+                   </li>
+                   <li>
+                        <a href="Trending.html">Trending</a>
+                    </li>
+                    <li>
+                        <a href="Kids.html">Kids</a>
+                    </li>
+               </ul> 
+            </div> 
+            <div class= "rightMenu">
+                <ul>
+                <li>
+                    <a href="Search.html">Search</a>
+               </li>
+               <li>
+                    <a href="Couch.html">Couch</a>
+                </li>
+                <li>
+                    <a href="Username">Username</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div id ="largeImage"> 
+            <div class="description-box">
+                    <h4>Girls on a Couch Presents: </h4>
+                    <h1>Couch Cinematics</h1>
+                    <h3>A chic alternative streaming service</h3>
+                    <p>We won't judge you for a 16 hour binge session. So, grab the your friends, the wine, and hit play.</p>
+                    <div class="button1">Play</div> 
+                    <div class="button2">Watch List</div>
+             </div>        
+        </div>
+        <div id ="videoSection">
+                <div class = "row">
+                    <div class="videoBoxes video1">
+                       <h4>Coming Soon!</h4> 
+                       <p> A feature film brought as part of a 
+                           partnership between Girls On A Couch 
+                           and the talented Katie Josiah</p>
+                    </div>
+                    <div class="videoBoxes video2">
+                        <h4>Coming Soon!</h4>
+                        <p> A feature film brought as part of a 
+                                partnership between Girls On A Couch 
+                                and the talented Katie Josiah</p>
+                    </div>
+                    <div class="videoBoxes video3">
+                        <h4>Coming Soon!</h4>
+                        <p> A feature film brought as part of a 
+                                partnership between Girls On A Couch 
+                                and the talented Katie Josiah</p>
+                    </div>
+                    <div class="videoBoxes video4">
+                        <h4>Coming Soon!</h4>
+                        <p> A feature film brought as part of a 
+                                partnership between Girls On A Couch 
+                                and the talented Katie Josiah</p>
+                    </div>
+                    <div class="videoBoxes video5">
+                        <h4>Coming Soon!</h4>
+                        <p> A feature film brought as part of a 
+                                partnership between Girls On A Couch 
+                                and the talented Katie Josiah</p>
+        </div>
+        </div>
+    </body>
+</html>
